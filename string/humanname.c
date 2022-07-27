@@ -11,3 +11,16 @@ int main()
 
 //[^\n] -- because without this we will print only first first character/name ,
 // to avoid and use fully ...Yash
+
+int Checkcapital(const char*)
+
+int Checkcapital(const char *p){
+	int icnt=0;
+	while (*p!='\0'){
+		if(p >=65 && p<=90){
+			icnt++;
+		}
+		p++;
+	}
+	return icnt;
+}
